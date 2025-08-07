@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Marques da Cruz - Portfolio Profissional</title>
+    <meta name="description" content="Portfolio profissional de Fernando Marques da Cruz - Designer Gráfico especializado em criação visual e desenvolvimento web.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Fernando Marques da Cruz - Portfolio">
+    <meta property="og:description" content="Designer Gráfico especializado em criação visual e desenvolvimento web">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/fernando-profile.jpg">
+    
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!-- FONTE GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FONTE AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- LIVRARIA DE ANIMACAO -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- AREA DE NAVEGACAO -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 class="gradient-text">Fernando Marques</h2>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- DESTAQUE -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-particles" id="particles"></div>
+        
+        <div class="hero-content">
+            <div class="profile-image" data-aos="zoom-in">
+                <img class='zoom'src="imagens/zoom2.jpg" alt="Fernando Marques da Cruz">
+                <div class="profile-glow"></div>
+            </div>
+            
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                <span class="gradient-text">Fernando Marques</span>
+                <br>
+                <span class="gradient-text">da Cruz</span>
+            </h1>
+            
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                Cursando Engenharia de Controle e Automação <br>& Desenvolvimento Web
+                <br>
+                <span>Criando experiências visuais excepcionais</span>
+            </p>
+            
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                <a href="#portfolio" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Ver Portfolio
+                </a>
+                <a href="#contato" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Entrar em Contato
+                </a>
+            </div>
+            
+            <div class="social-links" data-aos="fade-up" data-aos-delay="800">
+                <a href="https://www.linkedin.com/in/fernando-marques-da-cruz-105029346" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/fernandomcruz" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/_ferd14_" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="floating-elements">
+            <div class="float-element float-1"></div>
+            <div class="float-element float-2"></div>
+            <div class="float-element float-3"></div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- AREA SOBRE -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title gradient-text">Sobre Mim</h2>
+                <p class="section-subtitle">
+                    Tenho 19 anos, sou uma pessoa extremamente focada, curiosa e 
+                    determinada a aprender e evoluir constantemente.
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>
+                        Tenho um interesse genuíno por engenharia, tecnologia e design. 
+                        Estou sempre em busca de me desenvolver e entender profundamente 
+                        como as coisas funcionam.
+                    </p>
+                    <p>
+                        Acredito que dedicação, proatividade e vontade de crescer são tão 
+                        valorizadas quanto a experiência. Estou pronto para enfrentar novos desafios.
+                    </p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">19</span>
+                            <span class="stat-label">Anos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Instituições</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">9+</span>
+                            <span class="stat-label">Habilidades</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-container">
+                        <img src="imagens/download.gif" alt="Workspace criativo">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- AREA DE EDUCACAO -->
+            <div class="education" data-aos="fade-up">
+                <h3 class="education-title">Educação</h3>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="timeline-marker current"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 - Indefinido</div>
+                            <h4 class="adaptive-text">Udemy</h4>
+                            <p>Cursando Desenvolvimento Web</p>
+                            <span class="timeline-location">Curso Remoto</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="timeline-marker current"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - 2025</div>
+                            <h4 class="adaptive-text">Instituto Federal de São Paulo</h4>
+                            <p>Cursando Engenharia de Controle e Automação</p>
+                            <span class="timeline-location">Av Marginal 585 Fazenda Nossa Senhora Aparecida do Jaguari, São João da Boa Vista - SP, 13871-298</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2015 - 2019</div>
+                            <h4 class="adaptive-text">Influx Rio Claro</h4>
+                            <p>Curso de Ingles</p>
+                            <span class="timeline-location">R. 7, 1020 - Centro, Rio Claro - SP, 13500-143</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2009 - 2025</div>
+                            <h4 class="adaptive-text">Colégio Puríssimo Coração de Maria</h4>
+                            <p>Ensino Fundamental e Médio Completo</p>
+                            <span class="timeline-location">R. 7, 881 - Centro, Rio Claro - SP, 13500-143</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AREA DE PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title gradient-text">Portfolio</h2>
+                <p class="section-subtitle">
+                    Explore alguns dos meus trabalhos em Engenharia de Controle e Automação e Desenvolvimento Web
+                </p>
+            </div>
+            
+            <div class="filter-buttons" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="graphic">Engenharia de CA</button>
+                <button class="filter-btn" data-filter="web">Desenvolvimento web</button>
+                <button class="filter-btn" data-filter="marketing">Marketing Digital</button>
+            </div>
+            
+            <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="400">
+                <div class="portfolio-item graphic" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="imagens/isaqueajustado.jpeg" alt="Brand Identity Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Smartband inteligente de monitoramento</h3>
+                                <p>Para proporcionar melhor cuidado aos idosos.<br>
+Para possibilitar o monitoramento da própria saúde.<br>
+Para oferecer suporte em situações de emergência.</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://sites.google.com/view/caosifsp/página-inicial?authuser=0" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item marketing" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="imagens/eventogeral.jpeg" alt="E-commerce Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Marketing do Grupo Caos</h3>
+                                <p>Projeto extensionista do IFSP, do qual participei ativamente.<br>  Contribuí com todas as ideias de vídeos do grupo Caos.<br> O objetivo era alcançar o máximo de pessoas para o evento.</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/caosifsp" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AREA DE HABILIDADES -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title gradient-text">Habilidades & Experiências</h2>
+                <p class="section-subtitle">
+                    Minhas competências técnicas e ferramentas que domino
+                </p>
+            </div>
+            
+            <div class="skills-content">
+                <div class="technical-skills" data-aos="fade-right">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Controle e Automação</span>
+                            <span class="skill-percentage">10%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="10%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Powerpoint</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Excel</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="design-skills" data-aos="fade-left">
+                    <h3>Ferramentas de Design</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-percentage">100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="100%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Marketing Digital</span>
+                            <span class="skill-percentage">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65%"></div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="additional-skills" data-aos="fade-up" data-aos-delay="400">
+                <h3>Outras Competências</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4 class="adaptive-text">Inglês</h4>
+                        <p>Intermediário</p>
+                    </div>
+                    
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4 class="adaptive-text">Gestão de Projetos</h4>
+                        <p>Organização</p>
+                    </div>
+                    
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="adaptive-text">Trabalho em Equipe</h4>
+                        <p>Colaboração</p>
+                    </div>
+                    
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="skill-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="adaptive-text">Criatividade</h4>
+                        <p>Inovação</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AREA DE CONTATO -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title gradient-text">Entre em Contato</h2>
+                <p class="section-subtitle">
+                    Vamos trabalhar juntos? Entre em contato para discutir seu próximo projeto
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="adaptive-text">Email</h4>
+                            <p>fernandomarquescruz@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="adaptive-text">Telefone</h4>
+                            <p>(19) 99450-1469</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="adaptive-text">Localização</h4>
+                            <p>Rio Claro, São Paulo, Brasil</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPE -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/fernando-marques-da-cruz-105029346" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/fernandomcruz" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_ferd14_" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                
+                <p class="footer-text">
+                    © 2025 Fernando Marques da Cruz. Todos os direitos reservados.
+                </p>
+                
+                <p class="footer-love">
+                    Desenvolvido com muito sono <i class="fas fa-heart"></i> 
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AREA DE CARREGAMENTO -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loader">
+            <div class="loader-text">Fernando Marques</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
