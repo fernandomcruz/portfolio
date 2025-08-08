@@ -241,7 +241,7 @@ function initializeScrollEffects() {
     });
 }
 
-// ===== PORTFOLIO FILTER =====
+// FILTRO DE PORTFOLIO
 function initializePortfolioFilter() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const portfolioItems = document.querySelectorAll('.portfolio-item');
@@ -250,11 +250,11 @@ function initializePortfolioFilter() {
         button.addEventListener('click', () => {
             const filter = button.getAttribute('data-filter');
             
-            // Update active button
+            // botao de update ativo
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
             
-            // Filter portfolio items
+            // filtro de intens de portifolio
             portfolioItems.forEach(item => {
                 const shouldShow = filter === 'all' || item.classList.contains(filter);
                 
@@ -278,7 +278,7 @@ function initializePortfolioFilter() {
     });
 }
 
-// ===== SKILLS ANIMATION =====
+// animaçoes habilidades
 function initializeSkillsAnimation() {
     let skillsAnimated = false;
     
@@ -298,7 +298,7 @@ function initializeSkillsAnimation() {
     };
 }
 
-// ===== CONTACT FORM =====
+// formulario de contato
 function initializeContactForm() {
     const contactForm = document.getElementById('contact-form');
     if (!contactForm) return;
@@ -309,7 +309,7 @@ function initializeContactForm() {
         const formData = new FormData(contactForm);
         const formObject = Object.fromEntries(formData.entries());
         
-        // Simple validation
+        // validacao simples
         if (!formObject.nome || !formObject.email || !formObject.assunto || !formObject.mensagem) {
             showNotification('Por favor, preencha todos os campos.', 'error');
             return;
@@ -320,14 +320,14 @@ function initializeContactForm() {
             return;
         }
         
-        // Show loading state
+        // mostra estado de carregamento
         const submitButton = contactForm.querySelector('button[type="submit"]');
         const originalButtonText = submitButton.innerHTML;
         submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
         submitButton.disabled = true;
         
         try {
-            // Simulate API call (replace with actual endpoint)
+            // Simular chamada de API (substituir pelo endpoint real)
             await simulateAPICall(formObject);
             
             showNotification('Mensagem enviada com sucesso! Obrigado pelo contato.', 'success');
@@ -336,7 +336,7 @@ function initializeContactForm() {
         } catch (error) {
             showNotification('Erro ao enviar mensagem. Tente novamente.', 'error');
         } finally {
-            // Reset button
+            // botao reset
             submitButton.innerHTML = originalButtonText;
             submitButton.disabled = false;
         }
@@ -350,7 +350,7 @@ function initializeContactForm() {
     async function simulateAPICall(data) {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                // Simulate success (90% chance)
+                // simulador de sucesso (90% chance)
                 if (Math.random() > 0.1) {
                     console.log('Contact form submission:', data);
                     resolve(data);
@@ -362,9 +362,9 @@ function initializeContactForm() {
     }
 }
 
-// ===== NOTIFICATION SYSTEM =====
+// SISTEMA DE NOTIFICACAO
 function showNotification(message, type = 'info') {
-    // Remove existing notifications
+    // remove notificacoes existentes
     const existingNotifications = document.querySelectorAll('.notification');
     existingNotifications.forEach(notification => {
         notification.remove();
@@ -382,7 +382,7 @@ function showNotification(message, type = 'info') {
         </button>
     `;
     
-    // Add styles
+    // Adiciona stilos
     notification.style.cssText = `
         position: fixed;
         top: 100px;
@@ -402,7 +402,7 @@ function showNotification(message, type = 'info') {
     
     document.body.appendChild(notification);
     
-    // Close button functionality
+    // Funcionalidade do botão Fechar
     const closeButton = notification.querySelector('.notification-close');
     closeButton.addEventListener('click', () => {
         notification.style.animation = 'slideOutRight 0.3s ease-in';
@@ -411,7 +411,7 @@ function showNotification(message, type = 'info') {
         }, 300);
     });
     
-    // Auto remove after 5 seconds
+    // Auto remover apos 5 segundos
     setTimeout(() => {
         if (notification.parentNode) {
             notification.style.animation = 'slideOutRight 0.3s ease-in';
@@ -442,7 +442,7 @@ function showNotification(message, type = 'info') {
     }
 }
 
-// Add notification animations to CSS
+// Adicionar animações de notificação ao CSS
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideInRight {
@@ -490,7 +490,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// ===== AOS INITIALIZATION =====
+// INICIALIZAÇÃO AOS 
 function initializeAOS() {
     if (typeof AOS !== 'undefined') {
         AOS.init({
@@ -506,7 +506,7 @@ function initializeAOS() {
     }
 }
 
-// ===== UTILITY FUNCTIONS =====
+// ultilidades
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -532,22 +532,22 @@ function throttle(func, limit) {
     }
 }
 
-// ===== PERFORMANCE OPTIMIZATIONS =====
-// Optimized scroll handler
+// OTIMIZACOES DE PERFORMACE
+// Manipulador de rolagem otimizado
 const optimizedScrollHandler = throttle(() => {
     if (isLoading) return;
     
     const scrolled = window.pageYOffset;
     const navbar = document.getElementById('navbar');
     
-    // Navbar scroll effect
+    // Efeito de rolagem da barra de navegação
     if (scrolled > 50) {
         navbar?.classList.add('scrolled');
     } else {
         navbar?.classList.remove('scrolled');
     }
     
-    // Parallax effects (only on desktop)
+    // Efeitos de paralaxe (somente no desktop)
     if (window.innerWidth >= 1024) {
         const parallax = document.querySelector('.hero-background');
         if (parallax) {
@@ -565,15 +565,15 @@ const optimizedScrollHandler = throttle(() => {
 
 window.addEventListener('scroll', optimizedScrollHandler, { passive: true });
 
-// ===== ERROR HANDLING =====
+// TRATAMENTO DE ERROS
 window.addEventListener('error', (e) => {
     console.error('Portfolio Error:', e.error);
     // Could implement error tracking here
 });
 
-// ===== ACCESSIBILITY ENHANCEMENTS =====
+// MELHORIAS DE ACESSIBILIDADE
 document.addEventListener('keydown', (e) => {
-    // Escape key closes mobile menu
+    // A tecla Escape fecha o menu móvel
     if (e.key === 'Escape') {
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('nav-menu');
@@ -586,14 +586,14 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// ===== RESIZE HANDLER =====
+// MANIPULADOR DE REDIMENSIONAMENTO
 const optimizedResizeHandler = debounce(() => {
-    // Reinitialize particles on resize
+    // Reinicializar partículas ao redimensionar
     const particlesContainer = document.getElementById('particles');
     if (particlesContainer) {
         particlesContainer.innerHTML = '';
         if (window.innerWidth >= 768) {
-            // Recreate particles only on larger screens
+            // Recrie partículas apenas em telas maiores
             setTimeout(() => {
                 const particleCount = window.innerWidth < 1024 ? 30 : 50;
                 for (let i = 0; i < particleCount; i++) {
@@ -609,7 +609,7 @@ const optimizedResizeHandler = debounce(() => {
         }
     }
     
-    // Reinitialize AOS on resize
+    // Reinicializar o AOS ao redimensionar
     if (typeof AOS !== 'undefined') {
         AOS.refresh();
     }
@@ -617,7 +617,7 @@ const optimizedResizeHandler = debounce(() => {
 
 window.addEventListener('resize', optimizedResizeHandler);
 
-// ===== CONSOLE SIGNATURE =====
+// ASSINATURA DO CONSOLE 
 console.log(`
 ╔═══════════════════════════════════════╗
 ║     Fernando Marques da Cruz          ║
@@ -626,7 +626,7 @@ console.log(`
 ╚═══════════════════════════════════════╝
 `);
 
-// ===== EXPORT FOR TESTING (if needed) =====
+// EXPORTAR PARA TESTE (se necessário) 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         initializeTheme,
