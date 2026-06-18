@@ -6,22 +6,15 @@
     <title>Fernando Marques da Cruz - Portfolio Profissional</title>
     <meta name="description" content="Portfolio profissional de Fernando Marques da Cruz - Designer Gráfico especializado em criação visual e desenvolvimento web.">
     
-    <!-- Open Graph Tags -->
     <meta property="og:title" content="Fernando Marques da Cruz - Portfolio">
     <meta property="og:description" content="Designer Gráfico especializado em criação visual e desenvolvimento web">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./assets/fernando-profile.jpg">
     
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <!-- FONTE GOOGLE -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FONTE AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- LIVRARIA DE ANIMACAO -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="dark-theme">
@@ -35,8 +28,9 @@
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#cursos" class="nav-link">Habilidades</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#habilidades" class="nav-link">Cursos</a></li>
                 <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
             
@@ -60,7 +54,7 @@
         
         <div class="hero-content">
             <div class="profile-image" data-aos="zoom-in">
-                <img class='zoom'src="imagens/zoom2.jpg" alt="Fernando Marques da Cruz">
+                <img class='zoom' src="imagens/zoom2.jpg" alt="Fernando Marques da Cruz">
                 <div class="profile-glow"></div>
             </div>
             
@@ -124,12 +118,12 @@
             
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right">
-                    <p>
+                    <p class="section-subtitle">
                         Tenho um interesse genuíno por engenharia, tecnologia e design. 
                         Estou sempre em busca de me desenvolver e entender profundamente 
                         como as coisas funcionam.
                     </p>
-                    <p>
+                    <p class="section-subtitle">
                         Acredito que dedicação, proatividade e vontade de crescer são tão 
                         valorizadas quanto a experiência. Estou pronto para enfrentar novos desafios.
                     </p>
@@ -140,11 +134,11 @@
                             <span class="stat-label">Anos</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">3</span>
+                            <span class="stat-number">4</span>
                             <span class="stat-label">Instituições</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">9+</span>
+                            <span class="stat-number">14+</span>
                             <span class="stat-label">Habilidades</span>
                         </div>
                     </div>
@@ -162,23 +156,24 @@
             <div class="education" data-aos="fade-up">
                 <h3 class="education-title">Educação</h3>
                 <div class="timeline">
-                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
                         <div class="timeline-marker current"></div>
                         <div class="timeline-content">
-                            <div class="timeline-date">2025 - Indefinido</div>
-                            <h4 class="adaptive-text">Udemy</h4>
-                            <p>Cursando Desenvolvimento Web</p>
-                            <span class="timeline-location">Curso Remoto</span>
+                            <div class="timeline-date">2026 - 2029</div>
+                            <h4 class="adaptive-text">(UNESP) Universidade Estadual Paulista "Júlio de Mesquita Filho"</h4>
+                            <p>Cursando Engenharia Eletrônica e de Telecomunicações</p>
+                            <span class="timeline-location"></span>
                         </div>
                     </div>
                     
                     <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
-                        <div class="timeline-marker current"></div>
+                        <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <div class="timeline-date">2024 - 2025</div>
-                            <h4 class="adaptive-text">Instituto Federal de São Paulo</h4>
+                            <div class="timeline-date">2025 - 2026</div>
+                            <h4 class="adaptive-text">(IFSP) Instituto Federal de São Paulo</h4>
                             <p>Cursando Engenharia de Controle e Automação</p>
-                            <span class="timeline-location">Av Marginal 585 Fazenda Nossa Senhora Aparecida do Jaguari, São João da Boa Vista - SP, 13871-298</span>
+                            <span class="timeline-location"></span>
                         </div>
                     </div>
                     
@@ -187,7 +182,7 @@
                         <div class="timeline-content">
                             <div class="timeline-date">2015 - 2019</div>
                             <h4 class="adaptive-text">Influx Rio Claro</h4>
-                            <p>Curso de Ingles</p>
+                            <p>Curso de Inglês</p>
                             <span class="timeline-location">R. 7, 1020 - Centro, Rio Claro - SP, 13500-143</span>
                         </div>
                     </div>
@@ -203,6 +198,83 @@
                     </div>
                 </div>
             </div>
+
+            <!-- AREA DE HABILIDADES -->
+
+            <div class="tech-skills-section" id="cursos" data-aos="fade-up">
+                <h3 class="education-title">Habilidades Técnicas</h3>
+
+                <div class="tech-skills-grid">
+
+                    <div class="tech-skill-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="tech-skill-card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Linguagens</h4>
+                        <ul class="tech-skill-list">
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fab fa-js-square"></i> JavaScript</li>
+                            <li><i class="fab fa-python"></i> Python</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-skill-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="tech-skill-card-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h4>Frameworks e Design</h4>
+                        <ul class="tech-skill-list">
+                            <li><i class="fab fa-bootstrap"></i> Bootstrap 4</li>
+                            <li><i class="fas fa-mobile-alt"></i> Design Responsivo</li>
+                            <li><i class="fas fa-th-large"></i> Flexbox</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-skill-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="tech-skill-card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Software e Ferramentas</h4>
+                        <ul class="tech-skill-list">
+                            <li><i class="fas fa-drafting-compass"></i> AutoCAD</li>
+                            <li><i class="fab fa-git-alt"></i> Git</li>
+                            <li><i class="fab fa-github"></i> GitHub</li>
+                            <li><i class="fas fa-cloud-upload-alt"></i> Netlify</li>
+                            <li><i class="fas fa-file-excel"></i> Microsoft Excel</li>
+                            <li><i class="fas fa-laptop-code"></i> VSCode</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-skill-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="tech-skill-card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Conceitos</h4>
+                        <ul class="tech-skill-list">
+                            <li><i class="fas fa-globe"></i> Desenvolvimento Web Front-End</li>
+                            <li><i class="fas fa-terminal"></i> Lógica de Programação</li>
+                            <li><i class="fas fa-sitemap"></i> Estruturas de Controle e Dados</li>
+                            <li><i class="fas fa-shield-alt"></i> Resiliência de Código</li>
+                            <li><i class="fas fa-cogs"></i> Engenharia de Controle e Automação</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-skill-card tech-skill-card--wide" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="tech-skill-card-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h4>Idiomas</h4>
+                        <ul class="tech-skill-list tech-skill-list--inline">
+                            <li><span class="lang-flag">🇧🇷</span> Português <span class="lang-level lang-level--native">Nativo</span></li>
+                            <li><span class="lang-flag">🇺🇸</span> Inglês <span class="lang-level lang-level--intermediate">Intermediário</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM NOVA SEÇÃO HABILIDADES TÉCNICAS -->
+
         </div>
     </section>
 
@@ -269,89 +341,66 @@ Para oferecer suporte em situações de emergência.</p>
         </div>
     </section>
 
-    <!-- AREA DE HABILIDADES -->
+    <!-- AREA DE CURSOS (Cursos e Certificados) -->
     <section id="habilidades" class="skills">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title gradient-text">Habilidades & Experiências</h2>
-                <p class="section-subtitle">
-                    Minhas competências técnicas e ferramentas que domino
-                </p>
+                <h2 class="section-title gradient-text">Cursos e Certificados</h2>
             </div>
             
             <div class="skills-content">
-                <div class="technical-skills" data-aos="fade-right">
-                    <h3>Habilidades Técnicas</h3>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Python</span>
-                            <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75%"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">JavaScript</span>
-                            <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
-                    </div>
+                <div class="design-skills" data-aos="fade-left">
+                    <h3>Alguns cursos que realizei ou estou realizando</h3>
 
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span class="skill-name">Controle e Automação</span>
-                            <span class="skill-percentage">10%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="10%"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Powerpoint</span>
-                            <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Excel</span>
-                            <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="design-skills" data-aos="fade-left">
-                    <h3>Ferramentas de Design</h3>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-name-block">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-origin">Santander Open Academy</span>
+                            </div>
                             <span class="skill-percentage">100%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" data-width="100%"></div>
                         </div>
                     </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name-block">
+                                <span class="skill-name">CS50's Web Programming with Python and JavaScript</span>
+                                <span class="skill-origin">Harvard University</span>
+                            </div>
+                            <span class="skill-percentage">50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="50%"></div>
+                        </div>
+                    </div>
                     
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span class="skill-name">Marketing Digital</span>
-                            <span class="skill-percentage">65%</span>
+                            <div class="skill-name-block">
+                                <span class="skill-name">Desenvolvimento Web Completo</span>
+                                <span class="skill-origin">Udemy</span>
+                            </div>
+                            <span class="skill-percentage">45%</span>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-progress" data-width="65%"></div>
+                            <div class="skill-progress" data-width="45%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name-block">
+                                <span class="skill-name">Analise de Dados</span>
+                                <span class="skill-origin">Google</span>
+                            </div>
+                            <span class="skill-percentage">30%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="30%"></div>
                         </div>
                     </div>
                 
@@ -435,7 +484,7 @@ Para oferecer suporte em situações de emergência.</p>
                         </div>
                         <div class="contact-details">
                             <h4 class="adaptive-text">Localização</h4>
-                            <p>Rio Claro, São Paulo, Brasil</p>
+                            <p>São João da Boa Vista, São Paulo, Brasil</p>
                         </div>
                     </div>
                 </div>
@@ -480,7 +529,6 @@ Para oferecer suporte em situações de emergência.</p>
         </div>
     </div>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
